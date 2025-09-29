@@ -297,6 +297,30 @@
         .footer-column ul li a:hover {
             color: var(--secondary);
         }
+
+        .footer {
+        /* position: fixed; Usando fixed para manter o footer fixo na tela */
+        bottom: 0; /* Fica no canto inferior */
+        left:0%; /* Fica alinhado à esquerda */
+        width: 100%; /* Para cobrir toda a largura da tela */
+        color: white; /* Cor do texto */
+        text-align: center; /* Alinhar o texto ao centro */
+        padding: 10px 0; /* Espaçamento interno */
+        font-size: 15px;
+      }
+
+        span a{
+        color: white;
+        text-decoration: underline;
+        transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para zoom e cor */
+      }
+
+      a:hover {
+        color: var(--secondary); /* Altera a cor do texto */
+        transform: scale(3.1);
+        transition: color 0.3s ease; /* Transição suave */
+      }
+
         
         .social-links {
             display: flex;
